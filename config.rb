@@ -41,7 +41,7 @@ activate :livereload
 # Methods defined in the helpers block are available in templates
 helpers do
   def responsive_image_tag(src)
-    src
+    %Q|<img src="" data-responsive-image-tag="#{src}"><noscript><img src="#{src}"></noscript>|.html_safe
   end
 end
 
