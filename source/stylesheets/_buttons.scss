@@ -1,0 +1,21 @@
+//
+// buttons
+//
+
+button,
+.button {
+
+  &:hover {}
+
+  &.disabled,
+  &[disabled] {}
+}
+
+input[type="submit"] {
+
+}
+
+// media queries
+@media #{$small-up} {
+
+}

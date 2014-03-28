@@ -2,8 +2,28 @@
 // base
 //
 
+// paulirish.com/2012/box-sizing-border-box-ftw
 *,
 *:before,
 *:after {
   @include box-sizing(border-box);
 }
+
+// links
+a {
+
+  &:link {}
+  &:visited {}
+  &:hover {}
+  &:active {}
+}
+
+// images
+img {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+// junk
+hr {}

@@ -1,17 +1,7 @@
 //
-// mixins & functions
+// mixins
 //
 
-// variables
-$prefixes: true;
-$rem-base: 16px !default;
-
-// functions
-@function rem-calc($pixel-width) {
-   @return $pixel-width / $rem-base * 1rem;
-}
-
-// mixins
 @mixin box-sizing($type:border-box) {
   @if $prefixes {
     -moz-box-sizing: $type;
@@ -24,15 +14,6 @@ $rem-base: 16px !default;
   *zoom:1;
   &:before, &:after { content: " "; display: table; }
   &:after { clear: both; }
-}
-
-@mixin background-size($size) {
-  @if $prefixes {
-    -webkit-background-size: $size;
-    -moz-background-size: $size;
-    -o-background-size: $size;
-  }
-  background-size: $size;
 }
 
 @mixin border-radius($radius:$global-radius) {
@@ -57,3 +38,5 @@ $rem-base: 16px !default;
   }
   transition: $property $speed $ease;
 }
+
+// add helpful mixins here...
