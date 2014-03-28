@@ -4,14 +4,15 @@ html
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
 
-    title= current_page.data.title || "Luke Chamberlin"
-    
+    title Responsive Image Tags
+
     meta name="description" content=""
     meta name="viewport" content="width=device-width, initial-scale=1"
 
     = stylesheet_link_tag "all"
-  
+
   body
-    = yield
+    main
+      = yield
 
     = javascript_include_tag "all"
