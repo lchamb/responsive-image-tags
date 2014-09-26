@@ -1,2 +1,17 @@
+section.first
+  h1 Les Responsive Images
+
 section
   = responsive_image_tag '/images/istanbul.jpg'
+
+section
+  h2 This code:
+  pre.code
+    | = responsive_image_tag '/path/to/image.png'
+
+  h2 Produces:
+  pre.code
+    | &lt;img src='' data-responsive-image-tag='/path/to/image.png'&gt;
+      &lt;noscript&gt;
+        &lt;img src='/path/to/image.png'&gt;
+      &lt;/noscript&gt;

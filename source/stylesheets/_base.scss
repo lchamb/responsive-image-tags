@@ -28,3 +28,13 @@ img {
 
 // junk
 hr {}
+
+section {
+  margin: 0 0 20px;
+
+  &.first { margin: 0; }
+}
+
+footer {
+  min-height: 100px;
+}
